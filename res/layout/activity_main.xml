@@ -3,7 +3,7 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#cdcdcd"
+    android:background="#200ff000"
     android:orientation="vertical"
     tools:context="com.android.wowchat.MainActivity" >
 
@@ -29,10 +29,10 @@
 
         <EditText
             android:id="@+id/main_password"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/main_name"
+            android:layout_marginTop="20dp"
             android:background="#80ffffff"
             android:ems="10"
             android:hint="password"
@@ -49,14 +49,33 @@
             android:layout_centerHorizontal="true"
             android:onClick="login"
             android:text="Sign in" />
+
+        <TextView
+            android:id="@+id/main_newuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/main_sign"
+            android:layout_toRightOf="@+id/main_sign"
+            android:onClick="goregister"
+            android:text="New user , register"
+            android:textSize="20sp" />
     </RelativeLayout>
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
-        android:scaleType="fitXY"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/rel_login"
+        android:scaleType="fitXY"
         android:src="@drawable/wow" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:text="Copyright 2015 Imrokraft Solutions"
+        android:textSize="18sp" />
 
 </RelativeLayout>

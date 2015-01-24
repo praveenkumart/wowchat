@@ -9,8 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class UserAdapter extends ArrayAdapter<UserModel>{
+public class UserAdapter extends ArrayAdapter<UserModel>  {
 
+	
 	UserModel[] usersList;
 	Context myContext;
 
@@ -49,7 +50,7 @@ public class UserAdapter extends ArrayAdapter<UserModel>{
 		convertView.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(getContext(), "Clicked "+(position+1), Toast.LENGTH_SHORT).show(); 
+					Toast.makeText(getContext(), "Clicked "+(position+1), Toast.LENGTH_SHORT).show(); 
 			}
 		});
 		return convertView;

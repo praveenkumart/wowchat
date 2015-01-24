@@ -37,6 +37,13 @@
             android:paddingLeft="10dp"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/chat_message"
+            android:background="#000000" />
         
     </RelativeLayout>
 

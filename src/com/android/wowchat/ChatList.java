@@ -3,6 +3,8 @@ package com.android.wowchat;
 import com.android.wowchat.UserModel;
 
 import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.ListView;
 import android.os.Bundle;
 
@@ -20,6 +22,12 @@ public class ChatList extends ActionBarActivity {
 		
 		
 		myListView.setAdapter(myUserAdapter);
+	}
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu items for use in the action bar
+			    MenuInflater inflater = getMenuInflater();
+			    inflater.inflate(R.menu.chat_list, menu);
+			    return super.onCreateOptionsMenu(menu);
 	}
 
 	public UserModel[] createDummyUserModels(){
